@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #333333;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin-top: 1rem;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    margin-top: 1rem;
+}
+
+main > fieldset {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    margin-top: 1rem;
+}
+
+main label {
+    margin: 0.5rem;
+}
+
+.hidden {
+    display: none;
+}
