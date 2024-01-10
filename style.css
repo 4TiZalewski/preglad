@@ -25,11 +25,25 @@ main {
     margin-top: 1rem;
 }
 
-main > fieldset {
+main > form > *:not(.buttons),
+main > form > * > div {
     display: flex;
     flex-direction: column;
     align-self: flex-start;
     margin-top: 1rem;
+}
+
+main > form > * > div {
+    margin-top: 0;
+}
+
+main > form > * > fieldset {
+    display: flex;
+}
+
+.general-information {
+    display: flex;
+    flex-direction: column;
 }
 
 main label {
@@ -38,4 +52,15 @@ main label {
 
 .hidden {
     display: none;
+}
+
+.buttons, .display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons > input {
+    margin: 0.5rem;
+    padding: 0.3rem;
 }

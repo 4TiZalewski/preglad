@@ -11,8 +11,44 @@
     <div class="container">
         <h1>Przegląd samochodu</h1>
         <h4>Wybierz jedynie usługi, które potrzebujesz</h4>
-        <main id="display">
+        <main>
+            <form id="form">
+                <div class="general-information">
+                    <label for="name">
+                        Podaj imię:
+                        <input type="text" name="name" id="name" />
+                    </label>
+                    <label for="date">
+                        Wybierz datę:
+                        <input type="date" name="date" id="date" />
+                    </label>
+                </div>
+                <fieldset>
+                    <legend>Koła</legend>
+                    <div id="wheels">
 
+                    </div>
+                    <fieldset id="felgi">
+                        <legend>Typ felg</legend>
+                    </fieldset>
+                </fieldset>
+                <fieldset id="olej">
+                    <legend>Olej</legend>
+                </fieldset>
+                <fieldset id="mycie">
+                    <legend>Mycie samochodu</legend>
+                </fieldset>
+                <fieldset id="dodatkowe">
+                    <legend>Dodatkowe usługi</legend>
+                </fieldset>
+                <div class="buttons">
+                    <input type="submit" value="Wycena" />
+                    <input type="reset" value="Wyczyść" id="reset-form" />
+                </div>
+            </form>
+            <div id="display">
+
+            </div>
         </main>
     </div>
     <script src="main.js"></script>
